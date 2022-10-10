@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="css/font-awesome.css" rel="stylesheet">
-    <script src="js/login.js"></script>
+   
+    <script src="js/logicaInicio.js"></script>
+    <script src="js/usuarios.js"></script>
     <script>
         addEventListener("load", function() {
             setTimeout(hideURLbar, 0);
@@ -60,9 +62,10 @@
           <form class="login-form">
             <input type="text" placeholder="username" id="username"/>
             <input type="password" placeholder="password" id="password"/>
-            <button type="submit" onclick="login()">login</button>
+            <button type="submit"  id="btnIngresar">login</button>
             <p class="message">Not registered? <a href="#">Create an account</a></p>
           </form>
+          
         </div>
       </div>
 </body>
