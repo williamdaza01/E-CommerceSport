@@ -1,6 +1,7 @@
 const authLogin = () => {
-    const username = localStorage.setItem("username");
-    if(!username) return true;
+    const username = localStorage.getItem("username");
+    const usernameNew = document.getElementById("username").value;
+    if(username != usernameNew || !usernameNew) return true;
     return false;
 }
 
@@ -12,6 +13,7 @@ const saveInfo = () => {
 }
 
 const login = () => {
+    console.log(authLogin());
     if(authLogin() == true) {
         console.log("no exite");
         alert("El usuario no existe");
