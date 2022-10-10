@@ -1,4 +1,4 @@
-document.querySelector('#btnIngresar').addEventListener('click',iniciarSesion);
+document.querySelectorAll('#btnIngresar').addEventListener("click",iniciarSesion());
 
 function iniciarSesion(){
     var sUsuario='';
@@ -6,8 +6,8 @@ function iniciarSesion(){
     var bAcceso=false;
 
 
-    sUsuario=document.querySelector('#username').value;
-    sPassword=document.querySelector('#password').value;
+    const sUsuario=document.querySelector('#username');
+    const sPassword=document.querySelector('#password');
 
     bAcceso=validarCredenciales(sUsuario,sPassword);
     console.log(bAcceso);
