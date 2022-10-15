@@ -82,9 +82,10 @@ ol {
 /* CSS Document */
 
 header {
-    position: absolute;
+    position: fixed;
     z-index: 9;
     width: 100%;
+    background-color: #007bff;
 }
 
 .toggle,
