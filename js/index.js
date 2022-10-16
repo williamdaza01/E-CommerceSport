@@ -1,5 +1,6 @@
 let menu_items = [];
 let paginas = [];
+let slides;
 const menu_html = `<li>
 <a href="javascript:void(0);" id="item_1">Home</a>
 </li>
@@ -29,6 +30,10 @@ Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span>
 
 const init = () => {
     setTimeout(hideURLbar, 0);	
+    if(slides)
+	{
+		new Splide( '.splide',{type:'loop',autoplay:true} ).mount();
+	}
 }
 window.onload = init;
 
@@ -53,9 +58,13 @@ const navegacion = (event) => {
     }
 }
 
-function abrirPagina(evento){
+const abrirPagina = (evento) => {
     let pagina = evento.target.id;
     location.href = paginas[pagina];    
+}
+
+const asignarVariables = () => {
+	slides = document.getElementById("slide_01");
 }
 
 window.onload = function(){
