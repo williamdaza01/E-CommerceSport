@@ -1167,9 +1167,14 @@ ul.w3layouts-icons li a {
 
 /*-- to-top --*/
 a.move-top span {
+    position: fixed;
     color: #fff;
     width: 36px;
     height: 36px;
+    bottom:40px;
+    top: 500px;
+    right:50px;
+    border-radius: 50px;
     text-align: center;
     border: none;
     line-height: 2em;
@@ -1458,7 +1463,7 @@ a.move-top span {
     position:fixed;
     width:60px;
     height:60px;
-    bottom:40px;
+    bottom:150px;
     right:40px;
     background-color:#25d366;
     color:#FFF;
