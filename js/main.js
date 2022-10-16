@@ -14,4 +14,4 @@ function init(){
 
 function asignarVariables(){
 	slides = document.getElementById("slide_01");
-}
+} //hola
