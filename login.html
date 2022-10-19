@@ -9,16 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="css/font-awesome.css" rel="stylesheet">
-    <script src="js/login.js"></script>
-    <script>
-        addEventListener("load", function() {
-            setTimeout(hideURLbar, 0);
-        }, false);
-
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        }
-    </script>
+   
+   
 </head>
 <body>
     <div class="main-banner" id="home">
@@ -60,10 +52,13 @@
           <form class="login-form">
             <input type="text" placeholder="username" id="username"/>
             <input type="password" placeholder="password" id="password"/>
-            <button type="submit" onclick="login()">login</button>
-            <p class="message">Not registered? <a href="#">Create an account</a></p>
+            <button type="submit"  id="btnIngresar">login</button>
+            <p class="message" id="prueba"></p>
+            <p class="message">Not registered? <a href="registro.html">Create an account</a></p>
           </form>
+          
         </div>
       </div>
+      <script src="js/login.js"></script>  
 </body>
 </html>
