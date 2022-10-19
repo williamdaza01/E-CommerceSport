@@ -44,6 +44,7 @@ const navegacion = (event) => {
     menu_items.push(document.getElementById("item_4"));
     menu_items.push(document.getElementById("item_5"));
     menu_items.push(document.getElementById("item_6"));
+    menu_items.push(document.getElementById("item_7"));
 
     paginas["item_1"] = "index.html";
     paginas["item_2"] = "about.html";
@@ -51,6 +52,8 @@ const navegacion = (event) => {
     paginas["item_4"] = "single.html";
     paginas["item_5"] = "shop.html";
     paginas["item_6"] = "contact.html";
+    paginas["item_6"] = "contact.html";
+    paginas["item_7"] = "login.html";
 
     for(var i of menu_items)
     {
