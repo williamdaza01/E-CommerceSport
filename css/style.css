@@ -82,9 +82,10 @@ ol {
 /* CSS Document */
 
 header {
-    position: absolute;
+    position: fixed;
     z-index: 9;
     width: 100%;
+    background-color: #007bff;
 }
 
 .toggle,
@@ -1166,9 +1167,14 @@ ul.w3layouts-icons li a {
 
 /*-- to-top --*/
 a.move-top span {
+    position: fixed;
     color: #fff;
     width: 36px;
     height: 36px;
+    bottom:40px;
+    top: 500px;
+    right:50px;
+    border-radius: 50px;
     text-align: center;
     border: none;
     line-height: 2em;
