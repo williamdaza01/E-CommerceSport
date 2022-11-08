@@ -28,14 +28,16 @@ Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span>
 <a href="javascript:void(0);" id="item_6">Contact</a>
 </li>`;
 
-const init = () => {
-    setTimeout(hideURLbar, 0);	
+window.onload = init;
+
+function init() {
+    setTimeout(hideURLbar, 0);
+    asignarVariables();	
     if(slides)
 	{
 		new Splide( '.splide',{type:'loop',autoplay:true} ).mount();
 	}
 }
-window.onload = init;
 
 const navegacion = (event) => {
 	menu_items.push(document.getElementById("item_1"));
@@ -55,7 +57,7 @@ const navegacion = (event) => {
     paginas["item_6"] = "contact.html";
     paginas["item_7"] = "login.html";
 
-    for(var i of menu_items)
+    for(let i of menu_items)
     {
         i.addEventListener("click",abrirPagina);
     }
